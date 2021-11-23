@@ -1,0 +1,91 @@
+/* Polices */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+header h1{
+    font-family: 'Lobster';
+    font-size: 60px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    height: 25vw;
+    color: white;
+    background: linear-gradient(to bottom, #ff3852, #ff4e47, #ff613c, #ff7431, #ff8528, #ff9425, #ffa325, #ffb127, #ffc133, #fed040, #fcde4f, #fbed5f);
+}
+
+#icon img{
+    width: 50px;
+}
+/*Menu */
+.menu-flex{
+    height: 7vh;
+    border-bottom: 2px solid #ff3852;
+}
+
+.menu-flex ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu-flex li{
+    padding: 15px 30px;
+}
+.menu-flex a{
+    text-decoration: none;
+    color: black;
+}
+/**/
+
+/* Section Bienvenue */
+.container{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+margin: 2rem;
+}
+
+.bienvenue{
+    height: 15vh;
+}
+
+.bienvenue p{
+    text-align: center;
+}
+/*  */
+
+/* Section Van et Fourgon */
+.galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.image img{
+    width: 300px;
+    height: 200px;
+    max-height: 230px;  
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.600);
+    margin-top: 40px;
+}
+
+.vanFourgon{
+    height: 80vh;
+}
