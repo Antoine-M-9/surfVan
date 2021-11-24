@@ -1,2 +1,2 @@
 # surfVan
-Reproduire une page d'un site en html et css
+Reproduire la page d'un site en html et css
