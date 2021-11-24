@@ -1,5 +1,6 @@
 /* Polices */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -8,7 +9,8 @@
 }
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito', Arial;
+    font-size: 18px;
     color: black;
 }
 
@@ -22,7 +24,7 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    height: 25vw;
+    height: 35vh;
     color: white;
     background: linear-gradient(to bottom, #ff3852, #ff4e47, #ff613c, #ff7431, #ff8528, #ff9425, #ffa325, #ffb127, #ffc133, #fed040, #fcde4f, #fbed5f);
 }
@@ -30,7 +32,7 @@ header{
 #icon img{
     width: 50px;
 }
-/*Menu */
+/* Menu */
 .menu-flex{
     height: 7vh;
     border-bottom: 2px solid #ff3852;
@@ -49,27 +51,31 @@ header{
     text-decoration: none;
     color: black;
 }
-/**/
+
+/* Container */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;
+    }
 
 /* Section Bienvenue */
-.container{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
-margin: 2rem;
-}
-
 .bienvenue{
-    height: 15vh;
+    height: 14vh;
 }
 
 .bienvenue p{
     text-align: center;
 }
-/*  */
 
 /* Section Van et Fourgon */
+.vanFourgon{
+    height: 75vh;
+    margin-bottom: 4rem;
+}
+
 .galery{
     display: flex;
     flex-wrap: wrap;
@@ -81,11 +87,49 @@ margin: 2rem;
     height: 200px;
     max-height: 230px;  
     background-size: cover;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.600);
     margin-top: 40px;
 }
 
-.vanFourgon{
-    height: 80vh;
+figure{
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption{
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    background-color: #ff3852;
+    color: #fff;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Section Contact */
+.contact{
+    height: 20vh;
+}
+
+.paraContact{
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid #ff3852;
+    border-radius: 10px;
+    width: 90%;
+}
+
+/* Footer */
+.foot{
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    margin: 0;
+    background-color: #ff3852;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
 }
